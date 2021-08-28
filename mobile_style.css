@@ -19,6 +19,12 @@ h1 {
     font-family: 'Raleway', sans-serif;
 }
 
+h3 {
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+
+}
+
 p {
     font-size: 0.8em;
 }
@@ -111,4 +117,38 @@ main a {
     font-size: 0.8em;
     font-weight: 700;
     color: white;
+}
+
+/* Pros design */
+
+.pros {
+    max-width: 300px;
+    margin-top: 100px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.pros1 {
+    margin-top: -70px;
+}
+
+.pros img {
+    transform: scale(72%);
+    margin-top: 70px;
+}
+
+
+.pros h3 {
+    margin-top: 20px;    
+}
+
+.pros p {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    max-width: 298px;
+    line-height: 1.6em;
 }
