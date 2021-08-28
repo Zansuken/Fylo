@@ -4,15 +4,23 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
 
+/* General design -----------------------------------------------*/
+
 body {
     margin: 0;
     padding: 0;
     background-color: hsl(218, 28%, 13%);
     font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
-header, a {
+h1 {
+    font-size: 1.3em;
     font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-size: 0.8em;
 }
 
 ul {
@@ -21,6 +29,12 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+/* Header design -----------------------------------------------*/
+
+header, a {
+    font-family: 'Raleway', sans-serif;
 }
 
 header, header ul {
@@ -50,4 +64,51 @@ header li {
 header a {
     color: hsl(0, 0%, 100%);
     font-size: 0.7em;
+}
+
+/* Main design -----------------------------------------------*/
+
+main {
+    text-align: center;
+    margin-top: 35px;
+}
+
+main img {
+    max-width: 300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h1, main p {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    max-width: 300px;
+    line-height: 1.6em;
+}
+
+main p {
+    max-width: 276px;
+}
+main a {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 220px;
+    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border-radius: 20px;
+}
+
+.get_started {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: white;
 }
