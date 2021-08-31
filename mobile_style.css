@@ -213,6 +213,9 @@ main a {
 
 .quotes {
     width: 25px;
+    position: relative;
+    top: -60px;
+    left: -15px;
 }
 
 .review1, .review2, .review3 {
@@ -220,6 +223,7 @@ main a {
     padding: 25px 25px 20px 18px;
     margin-bottom: 20px;
     border-radius: 5px;
+    z-index: 9;
 }
 
 .reviews p {
