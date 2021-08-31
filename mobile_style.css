@@ -208,6 +208,7 @@ main a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 180px;
+    margin-bottom: 350px;
 }
 
 .quotes {
@@ -254,14 +255,15 @@ main a {
 
 .early_access {
     max-width: 297px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 180px;
+    margin-top: -160px;
+    margin-left: calc((297px / 2) - 297px);
     padding: 20px 20px;
     text-align: center;
     background-color: hsl(217, 28%, 15%);
     border-radius: 5px;
     box-shadow: 0px 1px 6px -2px #000;
+    position: absolute;
+    left: 50%;
 }
 
 .early_access p {
@@ -306,4 +308,99 @@ input {
 
 footer {
     background-color: hsl(216, 53%, 9%);
+    z-index: 9;
+    padding-top: 225px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+footer img {
+    transform: scale(80%);
+    padding-left: 47px;
+    margin-bottom: 20px;
+}
+
+.footer_nav ul {
+    padding-left: 0;
+}
+
+.contact ul {
+    padding-left: 29px;
+}
+
+.contact ul li p {
+    display: inline-block;
+    vertical-align: text-top;
+    position: relative;
+    top: -8px;
+    max-width: 220px;
+
+}
+
+.contact li {
+    padding-left: 16px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.contact li p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact li span {
+    font-size: 0.8em;
+}
+
+#location {
+    list-style-image: url(./images/icon-location.svg);
+}
+
+#phone {
+    list-style-image: url(./images/icon-phone.svg);
+}
+
+#contact_email {
+    list-style-image: url(./images/icon-email.svg);
+}
+
+.footer_nav {
+    margin-top: 50px;
+}
+
+.footer_nav a {
+    color: white;
+    font-size: 0.9em;
+}
+.footer_nav li {
+    margin-bottom: 10px;
+}
+
+.footer_nav ul {
+    margin-bottom: 40px;
+}
+
+.socials img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(343deg) brightness(102%) contrast(104%);
+    border: solid 1px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+}
+
+.socials {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
