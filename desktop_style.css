@@ -67,6 +67,7 @@
 
     .arguments_section {
         display: flex;
+        justify-content: space-around;
     }
 
     .arguments_section img {
@@ -95,18 +96,137 @@
         display: flex;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .reviews_flex {
-        display: flex;
-        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
     }
 
     .review1, .review2, .review3 {
-        max-width: 300px;
+        max-width: 291px;
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        font-size: 1.2em;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 0;
     }
 
     .quotes {
         width: 60px;
+        position: relative;
+        left: -40px;
+        z-index: 1;
+    }
+
+    .review_flex {
+        position: relative;
+        top: 20px;
+    }
+
+    .review_flex1 {
+        position: relative;
+        top: -30px;
+    }
+
+    .early_access {
+        max-width: 770px;
+        display: inline-flexbox;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: calc((770px / 2) - 770px);
+    }
+
+    .early_access h2 {
+        font-size: 2.2em;
+    }
+
+    .early_access p {
+        max-width: 100%;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .submit {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    input {
+        margin-top: 19px;
+    }
+
+    input[value="email@example.com"] {
+        width: 408px;
+        margin-left: 40px;
+    }
+
+    .submit a {
+        height: 42px;
+        width: fit-content;
+        margin-left: 30px;
+    }
+
+    .early_access .get_started {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: row;
+        max-width: fit-content;
+        margin-left: 100px;
+        margin-right: 50px;
+        font-size: 1.2em;
+    }
+
+    footer img {
+        margin-left: 50px;
+    }
+
+
+    .contact ul {
+        display: grid;
+        grid-template-columns: 500px 300px;
+        grid-template-rows: 25px 25px;
+        column-gap: 20px;
+        row-gap: 12px;
+    }
+
+    .contact ul li p {
+        max-width: 350px;
+        margin-top: 5px;
+        line-height: 22px;
+    }
+
+    #location {
+
+    }
+
+    #contact_email {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .footer_nav {
+        display: flex;
+        margin-top: 0;
+    }
+
+    .footer_nav ul {
+        margin-right: 25px;
+    }
+
+    footer ul {
+        margin-top: 0;
+    }
+
+    .socials {
+        margin-left: 100px;
+    }
+
+    .socials img {
+        margin: 3px;
+        position: relative;
     }
 }

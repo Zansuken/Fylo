@@ -77,6 +77,10 @@ header a {
     font-size: 0.7em;
 }
 
+header a:hover {
+    border-bottom: solid 1px white;
+}
+
 /* Main design -----------------------------------------------*/
 
 main {
@@ -122,6 +126,10 @@ main a {
     font-size: 0.8em;
     font-weight: 700;
     color: white;
+}
+
+main a:hover, .submit a:hover {
+    filter: brightness(110%);
 }
 
 /* Pros design */
@@ -193,6 +201,12 @@ main a {
 .arguments_section a {
     border-bottom: solid 1px hsl(176, 68%, 64%);
     color: hsl(176, 68%, 64%);
+}
+
+.arguments_section a:hover, .arguments_section a[href*="#"]:hover {
+    border-bottom: solid 1px #fff;
+    color: #FFF;
+    filter: brightness(300%);
 }
 
 .arguments_section a[href*="#"] {
@@ -271,14 +285,14 @@ main a {
 }
 
 .early_access p {
-    width: 265px;
+    max-width: 265px;
     display: flex;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
 }
 
-input[value="email@example.com"] {
+input[value=""] {
     font-family: 'Raleway', sans-serif;
     font-size: 0.6em;
     font-weight: 700;
@@ -297,7 +311,7 @@ input {
     margin-right: auto;
 }
 
-.submit a {
+.submit_button {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -306,6 +320,17 @@ input {
     width: 272px;
     background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
     border-radius: 20px;
+    padding-bottom: 12px;
+    padding-left: 75px;
+    padding-top: 12px;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: white;
+    border: transparent;
+}
+
+form:invalid {
+    color: red;
 }
 
 /* Footer design */
@@ -399,6 +424,14 @@ footer img {
     width: 25px;
     height: 25px;
     padding: 8px;
+}
+
+.socials a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+    top: -38px;
 }
 
 .socials {
