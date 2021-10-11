@@ -151,13 +151,41 @@
         justify-content: space-between;
     }
 
+    .submit_button {
+        width: 180px;
+        min-width: 180px;
+        padding-left: 30px;
+        padding-right: 0;
+        text-align: center;
+    }
+
     input {
-        margin-top: 19px;
+        margin-top: 0px;
     }
 
     input[value="email@example.com"] {
         width: 408px;
         margin-left: 40px;
+    }
+
+    input[value="Get Started For Free"] {
+        min-width: 180px;
+        height: 41px;
+        text-align: center;
+        margin: 0 0 0 30px;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        justify-content: space-between;
+    }
+
+    #email {
+        min-width: 450px;
     }
 
     .submit a {

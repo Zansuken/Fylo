@@ -327,6 +327,7 @@ input {
     font-weight: 700;
     color: white;
     border: transparent;
+    cursor: pointer;
 }
 
 form:invalid {
